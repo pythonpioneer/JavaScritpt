@@ -129,6 +129,30 @@
         arr.slice(startIndex);  // returns array element starts from startIndex.
         arr.slice(startIndex, endIndex);  // returns elements from start to end as an array
 
+- finding maximum and minimum element
+
+        Math.max(...arr);  // returns the max element
+        math.min(...arr);  // returns the min element
+
+- splitting string to create an array
+
+        str.split(seprator, limit);  // seprate the string when seprator encounters
+
+        // example of split
+        let str = "I am Hritik";
+        str.split(" ");  // returns: ["I", "am", "Hritik"]
+        str.split(" ", 2);  // returns: ["I", "am"]
+        str.split("", 3);  // returns: ["I", " ", "a"]
+
+- joining array to create string
+        arr.join(seprator);  // join array element with given seprator
+
+        // example of join
+        let arr = ["I", "am", "Hritik"];
+        arr.join(" ");  // returns: "I am Hritik"
+        arr.join("");  // returns: "IamHritik"
+        arr.join("|");  // returns: "I|am|Hritik"
+
 ## Searching in array
 
 - using "includes" method. (returns boolean)
@@ -136,4 +160,9 @@
         arr.includes(element);  // return true, if element is present in array
         arr.includes(element, startIndex);  // return true, if element is present in array after startIndex.
 
-## Sorting an array
+## Sorting an array 
+> ### Takes compare function and return +ve(a is sorted before b), 0(no sorting required), -ve(b is sorted before a). 
+
+        arr.sort();  // ascending order
+        arr.sort((a, b) => a - b);  // ascending order
+        arr.sort((a, b) => b - a);  // descending order
