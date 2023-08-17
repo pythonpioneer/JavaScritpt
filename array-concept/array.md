@@ -91,6 +91,10 @@
 
         copiedArr = [...arr];  // both having the same value but different memory addresses.
 
+- copy using slice method
+
+        copiedArr = arr.slice();  // both having the same value but different memory addresses.
+
 ## Array operations
 
 - insertion in array
@@ -106,9 +110,30 @@
         arr[3] = 4;  // arr: [1, 2, 3, 4]
         arr[5] = 6;  // arr; [1, 2, 3, 4, <1 empty item>, 6]
 
+  - inserting an element at specific position
+
+        arr.splice(specificIndex, deleteCount, element);  // insert element at specific element, after deleting deleteCount elements
+
+        // example of insertion at indicies
+        let arr = [1, 3, 4];
+        arr.splice(1, 0, 2);  // arr: [1, 2, 3, 4]
+
 - deletion in array
 
         arr.pop();  // delete last element from array and returns it
         arr.pop(2);  // also delete last element, args not required.
 
-        
+- extracting array or elements from array
+
+        arr.slice();  // returns copy of arr
+        arr.slice(startIndex);  // returns array element starts from startIndex.
+        arr.slice(startIndex, endIndex);  // returns elements from start to end as an array
+
+## Searching in array
+
+- using "includes" method. (returns boolean)
+
+        arr.includes(element);  // return true, if element is present in array
+        arr.includes(element, startIndex);  // return true, if element is present in array after startIndex.
+
+## Sorting an array
