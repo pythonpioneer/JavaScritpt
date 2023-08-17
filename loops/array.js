@@ -29,3 +29,18 @@ console.log("\nmap as loop");
 arr.map((element, index) => {
     console.log(index, element);
 });
+
+console.log("\nevery method")
+let array = [1, 3, 2, 4, 6];
+// const res = 
+arr.every(val => val != "npm");
+
+console.log("\nfilter method")
+// const res = 
+array.filter(val => 
+    val % 2 
+);
+
+console.log("\nreduce method");
+const res = array.reduce((prev, curr) => prev+curr);
+console.log(res);
