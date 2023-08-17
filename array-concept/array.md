@@ -55,14 +55,6 @@
             index;  // accessing every index of array
         });
 
-- check that every element of array pass a test or not
-  
-        arr.every(val => val < 10);  // true, if every element is less than 10, else false.
-
-- check that some element of array pass a test
-        
-        arr.some(val => val < 10);  // true, if any element is less than 10, else false.
-
 - Filter the array on conditions
 
         arr.filter(val => val % 2);  // return an array of odd eleemnt
@@ -78,3 +70,45 @@
             element;  // accessing every element of array
             index;  // accessing every index of array
         });
+
+## Checks in array
+
+- check that every element of array pass a test or not
+  
+        arr.every(val => val < 10);  // true, if every element is less than 10, else false.
+
+- check that some element of array pass a test
+        
+        arr.some(val => val < 10);  // true, if any element is less than 10, else false.
+
+## Copy an array
+
+- copy by refrence
+
+        copiedArr = arr;  // both having the same memory refrence.
+
+- copy by value (using spread operator)
+
+        copiedArr = [...arr];  // both having the same value but different memory addresses.
+
+## Array operations
+
+- insertion in array
+  
+  - using push method
+
+        arr.push(element);  // insert an element at end
+        arr.push(element1, element2, ...elements);  // insert multiple elements at the end
+
+  - directly inserting elements using indicies
+
+        let arr = [1, 2, 3];
+        arr[3] = 4;  // arr: [1, 2, 3, 4]
+        arr[5] = 6;  // arr; [1, 2, 3, 4, <1 empty item>, 6]
+
+- deletion in array
+
+        arr.pop();  // delete last element from array and returns it
+        arr.pop(2);  // also delete last element, args not required.
+
+        
