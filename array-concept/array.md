@@ -43,7 +43,7 @@
 
 - using "for-of" loop with index
         
-        for(let [index, value] of arr) {
+        for(let [index, value] of arr.entries()) {
             value;  // accessing every element of array
             index;  // accessing every index of array
         }

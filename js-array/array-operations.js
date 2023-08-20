@@ -50,3 +50,11 @@ console.log(str.split("", 3));  // returns: ["I", "a", "m"]
 
 console.log(sarr.join(""));
 
+
+// for of loop confirmation
+arr = [1, 2, 3, 4, 5];
+
+for(let [index, value] of arr.entries()) {
+    console.log(index, " ", value);
+}
+
