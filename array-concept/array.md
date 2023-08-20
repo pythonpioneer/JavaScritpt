@@ -37,13 +37,13 @@
 
 - using "for-of" loop
         
-        for(let value in arr) {
+        for(let value of arr) {
             value;  // accessing every element of array
         }
 
 - using "for-of" loop with index
         
-        for(let [index, value] in arr) {
+        for(let [index, value] of arr) {
             value;  // accessing every element of array
             index;  // accessing every index of array
         }
