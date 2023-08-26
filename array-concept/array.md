@@ -1,29 +1,29 @@
 # Array
 
-## Array Intialization
+## Array Initialization
 
 - initialize array with zero elements
         
         let arr1 = [];  // blank array.
         let arr2 = new Array();  // blank array.
 
-- initialize array with some elements.
+- Initialize the array with some elements.
 
         let arr1 = [1, 2, 3, 4, 5];  // array containing five elements.
         let arr2 = new Array(1, 2, 3, 4, 5);  // array containing five elements.
 
-- initialize array with one element.
+- Initialize the array with one element.
 
         let arr1 = [2];  // array containing one element.
         let arr2 = new Array(2);  // array containing two undefined element.
 
-- initialize array with one element, except integer elements.
+- Initialize the array with one element, except integer elements.
 
         let arr2 = new Array("two");  // array containing one element.
 
 ## Array Traversing
 
-- using "for" loop (other loops working are same)
+- using "for" loop (other loops working are the same)
         
         for(let index=0; index<arr.length; index++) {
             arr[index];  // accessing every element of array
@@ -41,7 +41,7 @@
             value;  // accessing every element of array
         }
 
-- using "for-of" loop with index
+- using "for-of" loop with indices
         
         for(let [index, value] of arr.entries()) {
             value;  // accessing every element of array
@@ -61,7 +61,7 @@
 
 - Reduce the array
 
-        // adding all element of array
+        // adding all elements of array
         arr.reduce((prev, curr) => prev+curr);  // curr: arr[i] and prev: arr[i-1]
 
 - using "map" function (returns new array)
