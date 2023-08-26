@@ -134,6 +134,13 @@
         Math.max(...arr);  // returns the max element
         math.min(...arr);  // returns the min element
 
+- concatination in array (also do with spread operator)
+        
+        arr = [1, 2, 3];
+        arr2 = [4, 5, 6];
+        concatArr = arr.concat(arr2);  // concatArr: [1, 2, 3, 4, 5, 6]
+
+
 - splitting string to create an array
 
         str.split(seprator, limit);  // seprate the string when seprator encounters
@@ -163,6 +170,56 @@
 ## Sorting an array 
 > ### Takes compare function and return +ve(a is sorted before b), 0(no sorting required), -ve(b is sorted before a). 
 
+- for numbers (compare function is required)
+
         arr.sort();  // ascending order
         arr.sort((a, b) => a - b);  // ascending order
         arr.sort((a, b) => b - a);  // descending order
+
+- for non-numbers (compare function not required)
+
+        arr.sort();  // sorting in ascending order
+
+## Spread operator uses
+
+- concatenation in array (it's slower as compare to arr.concat)
+        
+        arr = [1, 2, 3];
+        arr2 = [3, 4, 5];
+        concatArr = [...arr, ...arr2];  concatArr: [1, 2, 3, 3, 4, 5]
+
+- concatenation in Object
+        
+        obj1 = {'name': "Hrk"};
+        obj2 = {'id': 123};
+        concatObj = {...obj1, ...obj2};
+
+- copy an array
+- copy an object
+        
+        obj = { 'name': "hrk", 'id': 123 };
+        copiedObj = obj;  // obj and copiedObj, both shares the same memory location
+        copiedObj = {...obj};  // both having different memory location
+
+- Expanding multidimensional array into single dimensional array
+
+        anotherArr = [3, 4, 5];
+        arr = [1, 2, anotherArr, 6];  // arr: multidimesional array (traversal is difficult)
+        arr = [1, 2, ...anotherArr, 6];  // arr: single dimensional array (traversal is easy)
+
+## Destructuring array and object
+
+- Destructuring array
+
+        arr = ["Hritik", "India", 6.79];
+        [name, location, score] = arr;  // name: Hritik location: India, score: 6.79
+
+- Destructuring object (use keys of object as variable when destructuring)
+        
+        obj = { 'name': "hrk", 'id': 123 };
+        {name, id} = obj;  // name: hrk id: 123
+
+## Rest operator uses
+
+
+

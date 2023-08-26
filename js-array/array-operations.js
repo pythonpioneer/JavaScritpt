@@ -58,3 +58,21 @@ for(let [index, value] of arr.entries()) {
     console.log(index, " ", value);
 }
 
+// expanding using spread operator
+let arr1 = [0, 1, 2];
+arr = [arr1, 3, 4, 5]
+
+// copying obj
+let obj = { 'name': "hrk", 'id': 123 };
+copiedObj = {...obj};
+obj.job = "no";
+console.log(copiedObj);
+
+// destructuring 
+arr = ["Hritik", "India", 6.79];
+let [name, location, score] = arr;
+console.log(name, location, score);
+
+obj = { 'names': "hrk", 'id': 123 };
+let {names, idd} = obj;
+console.log(names, idd);
