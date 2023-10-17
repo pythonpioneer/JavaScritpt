@@ -1,4 +1,4 @@
-// writing a function to clone an array
+// writing a function to clone an array (we can also use spread operator to clone the array)
 function cloneArray(arr) {
     return arr.slice();  // default value: 0
 }
