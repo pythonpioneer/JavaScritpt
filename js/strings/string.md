@@ -2,14 +2,6 @@
 
 ## String methods
 
-- length
-- slice
-- substring
-- substr
-
-
-## String methods usage
-
 1. To find the length of the string
    
         str.length
@@ -58,3 +50,29 @@
     
         str.split(splitterString)  // returns list
 
+
+## String Search
+
+10. To find the first occurence of the string
+   
+        str.indexOf(string)  // returns first index or -1
+        str.indexOf(string, srartIndexOfSearch)  // returns first index or -1
+
+        str.search(/string/)  // returns the first index or -1, can pass regex
+        str.search(string)  // returns the first index or -1, can pass regex
+
+11. To find the last occurence of the string
+
+        str.lastIndexOf(string, index)  // returns the last index or -1
+
+12. To find all match of the string
+   
+        str.match(/string/gi)  // returns array, containing all string match, case insensitive
+
+13. To check that the string matches or not
+
+        str.includes(string)  // returns boolean
+        str.includes(string, startIndex)  // returns boolean
+
+        str.startsWith(string, firstIndex)   // returns boolean
+        str.endsWith(string, lastIndex)   // returns boolean
